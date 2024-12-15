@@ -40,9 +40,12 @@ def luDecomposition(mat, n):
         print("")
 
 
-mat = [
-    [2, 1, 2],
-    [3, 4, 1],
-    [5, 2, 9]
-]
-luDecomposition(mat, 3)
+def main():
+    mat = [
+        [2, 1, 2],
+        [3, 4, 1],
+        [5, 2, 9]
+    ]
+    luDecomposition(mat, 3)
+    
+main()
