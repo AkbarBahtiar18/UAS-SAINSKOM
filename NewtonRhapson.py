@@ -15,7 +15,7 @@ def newton_raphson(f, f_inverse, x0, e, n):
     Mengembalikan:
         Akar dari fungsi jika ditemukan dalam batas toleransi dan iterasi, jika tidak maka None.
     """
-    print("Iter\txi\tf(xi)\t|f(xi)|")
+    print("Iter\txi\t\tf(xi)\t\t|f(xi)|")
     for i in range(1, n + 1):
         fx = f(x0)
         f_inv = f_inverse(x0)
