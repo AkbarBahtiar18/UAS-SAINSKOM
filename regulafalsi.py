@@ -36,6 +36,3 @@ def regula_falsi_with_input():
 
     print("Akar tidak ditemukan dalam iterasi maksimum")
     return None
-
-
-regula_falsi_with_input()
