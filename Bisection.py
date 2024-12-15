@@ -39,13 +39,16 @@ def bisection_method(f, a, b, tolerance=0.001, max_iterations=100):
 def fungsi(x):
     return x * math.exp(-x) + 1
 
-a = -1  
-b = 0  
-toleransi = 0.0001
-iterasi_maks = 11
+def main():
+    a = -1  
+    b = 0  
+    toleransi = 0.0001
+    iterasi_maks = 11
 
-akar = bisection_method(fungsi, a, b, toleransi, iterasi_maks)
+    akar = bisection_method(fungsi, a, b, toleransi, iterasi_maks)
 
-if akar is not None:
-    print(f"\nAkar persamaan: {akar:.6f}")
-    print(f"Nilai fungsi di titik akar: {fungsi(akar):.6f}")
+    if akar is not None:
+        print(f"\nAkar persamaan: {akar:.6f}")
+        print(f"Nilai fungsi di titik akar: {fungsi(akar):.6f}")
+        
+main()
