@@ -72,5 +72,4 @@ def maininterpolkuadrat():
     os.system("pause")
     os.system("cls")
     
-maininterpolkuadrat()
         
