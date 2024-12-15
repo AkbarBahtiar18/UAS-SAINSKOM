@@ -25,7 +25,7 @@ def iterasi_sederhana(x0, toleransi, iterasi_maks):
     print("\nIterasi maksimum tercapai, solusi mungkin tidak konvergen.")
     return None
 
-def mainiterasiseder():
+def main():
     os.system("cls")
     print("=== Metode Iterasi Sederhana ===\n")
     # Input parameter
@@ -43,6 +43,3 @@ def mainiterasiseder():
         print("\nTidak ditemukan solusi dalam iterasi maksimum.")
     os.system("pause")  
     os.system("cls")
-    
-    
-mainiterasiseder()
