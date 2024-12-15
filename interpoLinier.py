@@ -55,5 +55,3 @@ def maininterpolasi():
     os.system("pause")
     os.system("cls")
 
-
-maininterpolasi()
