@@ -47,5 +47,3 @@ def main():
         [5, 2, 9]
     ]
     luDecomposition(mat, 3)
-    
-main()
