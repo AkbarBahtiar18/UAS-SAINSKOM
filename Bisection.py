@@ -50,5 +50,3 @@ def main():
     if akar is not None:
         print(f"\nAkar persamaan: {akar:.6f}")
         print(f"Nilai fungsi di titik akar: {fungsi(akar):.6f}")
-        
-main()
