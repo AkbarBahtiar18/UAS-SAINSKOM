@@ -112,7 +112,7 @@ def input_matrixB():
             b.append(float(input(f"b[{i + 1}]: ")))
         b = np.array(b, dtype=float)
         return b
-def mainiterasi():
+def main():
     os.system("cls")
     print(""" 
           =====================================
@@ -150,5 +150,4 @@ def mainiterasi():
         
     os.system("pause")
     os.system("cls")
-        
-mainiterasi()
+
