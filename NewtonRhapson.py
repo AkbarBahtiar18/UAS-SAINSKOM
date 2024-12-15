@@ -56,16 +56,16 @@ def input_fungsi():
 
     return f, f_inverse
 
-# Input parameter dari pengguna
-try:
-    toleransi = float(input("Masukkan toleransi (contoh: 1e-6): "))
-    iterasi_maks = int(input("Masukkan jumlah iterasi maksimum: "))
-    tebakan_awal = float(input("Masukkan tebakan awal: "))
+def main():
+    try:
+        toleransi = float(input("Masukkan toleransi (contoh: 1e-6): "))
+        iterasi_maks = int(input("Masukkan jumlah iterasi maksimum: "))
+        tebakan_awal = float(input("Masukkan tebakan awal: "))
 
-    # Masukkan fungsi secara manual
-    f, f_inverse = input_fungsi()
+        # Masukkan fungsi secara manual
+        f, f_inverse = input_fungsi()
 
-    # Jalankan metode Newton-Raphson
-    newton_raphson(f, f_inverse, tebakan_awal, toleransi, iterasi_maks)
-except Exception as e:
-    print(f"Kesalahan: {e}")
+        # Jalankan metode Newton-Raphson
+        newton_raphson(f, f_inverse, tebakan_awal, toleransi, iterasi_maks)
+    except Exception as e:
+        print(f"Kesalahan: {e}")
