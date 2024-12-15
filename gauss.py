@@ -58,30 +58,30 @@ def gauss_elimination(A, b):
     
     return X
 
-# Input manual berupa 3 persamaan linear dalam format string
-print("Masukkan persamaan linear pertama (misalnya 2x + 3y + 5z = 6):")
-eq1 = input()
-print("Masukkan persamaan linear kedua (misalnya 3x + 2y + 4z = 8):")
-eq2 = input()
-print("Masukkan persamaan linear ketiga (misalnya x + y + z = 2):")                                                                
-eq3 = input()
+def main():
+    print("Masukkan persamaan linear pertama (misalnya 2x + 3y + 5z = 6):")
+    eq1 = input()
+    print("Masukkan persamaan linear kedua (misalnya 3x + 2y + 4z = 8):")
+    eq2 = input()
+    print("Masukkan persamaan linear ketiga (misalnya x + y + z = 2):")                                                                
+    eq3 = input()
 
-# Parsing persamaan menjadi koefisien
-a1 = parse_equation(eq1)
-a2 = parse_equation(eq2)
-a3 = parse_equation(eq3)
+    # Parsing persamaan menjadi koefisien
+    a1 = parse_equation(eq1)
+    a2 = parse_equation(eq2)
+    a3 = parse_equation(eq3)
 
-# Membentuk matriks koefisien A dan vektor b
-A = np.array([a1[:3], a2[:3], a3[:3]], dtype=float)
-b = np.array([a1[3], a2[3], a3[3]], dtype=float)
+    # Membentuk matriks koefisien A dan vektor b
+    A = np.array([a1[:3], a2[:3], a3[:3]], dtype=float)
+    b = np.array([a1[3], a2[3], a3[3]], dtype=float)
 
-print("\nMatriks Augment Awal:")
-print(np.hstack([A, b.reshape(-1, 1)]))
+    print("\nMatriks Augment Awal:")
+    print(np.hstack([A, b.reshape(-1, 1)]))
 
-# Melakukan eliminasi Gauss
-X = gauss_elimination(A, b)
+    # Melakukan eliminasi Gauss
+    X = gauss_elimination(A, b)
 
-# Menampilkan hasil akhir
-print("\nHasil Akhir:")
-for i, var in enumerate(['x', 'y', 'z']):
-    print(f"{var} = {X[i]}")
+    # Menampilkan hasil akhir
+    print("\nHasil Akhir:")
+    for i, var in enumerate(['x', 'y', 'z']):
+        print(f"{var} = {X[i]}")
