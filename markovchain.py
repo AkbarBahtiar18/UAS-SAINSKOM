@@ -1,6 +1,6 @@
 import numpy as np
 
-def mchain():
+def main():
     # Memilih ukuran matriks
     print("Pilih ukuran matriks (2, 3, atau 4):")
     size = int(input())
@@ -54,5 +54,3 @@ def mchain():
     print("Steady State:")
     print(steady_state)
 
-if __name__ == "__main__":
-    mchain()
