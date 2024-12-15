@@ -1,6 +1,6 @@
 import numpy as np
 
-def inversMatriks():
+def main():
     matrix = np.array([
         [2, 1, 2],
         [3, 4, 1],
@@ -9,6 +9,4 @@ def inversMatriks():
     invers = np.linalg.inv(matrix)
     print(f"Matriks Asli:\n{matrix}")
     print(f"\nMatriks Invers:\n {invers}")
-
-inversMatriks()   
     
