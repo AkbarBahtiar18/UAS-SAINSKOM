@@ -27,7 +27,7 @@ def tabelsimulasi(n, array, distribusi, variabel):
     rata_rata = total_frekuensi / n
     print(f"\nRata-rata frekuensi: {rata_rata}")
     
-if __name__ == "__main__":
+def main():
     variabel = [] 
     frekuensi = [] 
 
