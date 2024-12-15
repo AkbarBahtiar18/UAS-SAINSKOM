@@ -51,5 +51,3 @@ def main():
     nilai = polinom_newton(x, y, titik_interpolasi)
     print(f"\nNilai polinom Newton pada x = {titik_interpolasi}: {nilai:.4f}")
 
-if __name__ == "__main__":
-    main()
