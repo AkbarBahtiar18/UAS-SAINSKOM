@@ -53,17 +53,17 @@ def input_fungsi():
 
     return f
 
-# Input parameter dari pengguna
-try:
-    toleransi = float(input("Masukkan toleransi (contoh: 1e-6): "))
-    iterasi_maks = int(input("Masukkan jumlah iterasi maksimum: "))
-    x0 = float(input("Masukkan nilai pendekatan awal pertama (x0): "))
-    x1 = float(input("Masukkan nilai pendekatan awal kedua (x1): "))
+def main():
+    try:
+        toleransi = float(input("Masukkan toleransi (contoh: 1e-6): "))
+        iterasi_maks = int(input("Masukkan jumlah iterasi maksimum: "))
+        x0 = float(input("Masukkan nilai pendekatan awal pertama (x0): "))
+        x1 = float(input("Masukkan nilai pendekatan awal kedua (x1): "))
 
-    # Masukkan fungsi secara manual
-    f = input_fungsi()
+        # Masukkan fungsi secara manual
+        f = input_fungsi()
 
-    # Jalankan metode Secant
-    secant_method(f, x0, x1, toleransi, iterasi_maks)
-except Exception as e:
-    print(f"Kesalahan: {e}")
+        # Jalankan metode Secant
+        secant_method(f, x0, x1, toleransi, iterasi_maks)
+    except Exception as e:
+        print(f"Kesalahan: {e}")
