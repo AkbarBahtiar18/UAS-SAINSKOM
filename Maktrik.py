@@ -54,6 +54,3 @@ def main():
 
     else:
         print("Pilihan tidak valid. Program selesai.")
-
-if __name__ == "__main__":
-    main()
